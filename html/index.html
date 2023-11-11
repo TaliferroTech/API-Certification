@@ -81,11 +81,11 @@
                         <div class="row">
                             <aside class="col-xl-3 col-lg-4">
                                 <h2>Evaluate an API and see your score</h2>
-                                <p class="lead">Step through our questionaire for a free evaluation</p>
+                                <p class="lead">Step through our questionnaire for a free evaluation</p>
                                 <ul class="list_ok">
                                     <li>Is the communcation mechanism secure?</li>
                                     <li>Is there an audit trail?</li>
-                                    <li>Has the API been authorize to access the requested resource?</li>
+                                    <li>Has the API been authorized to access the requested resource?</li>
                                 </ul>
                             </aside><!-- /aside -->
 
@@ -100,199 +100,271 @@
                                         <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details -->
                                         <div id="middle-wizard">
                                             <div class="step">
-                                                <h3 class="main_question"><strong>1/4</strong>Let's start with Transport Security</h3>
+                                                <h3 class="main_question"><strong>1/6</strong>Network Security and Authentication</h3>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <label><input name="question_1" type="checkbox" title="Transport security is critical to protect the confidentiality of submitted requests" class="icheck">Edge of the network are secured using the most recent version of TLS?
+                                                    <label><input name="question_1" type="checkbox" class="icheck">Check certificate revocation on every call.
                                                     </label>
                                                 </div>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <label><input name="question_2" type="checkbox" title="The same transport security considerations apply to traffic inside your network as well" class="icheck">Edge of the network to backends are secured using the most recent version of mutual TLS with perfect forward secrecy and a modern cipher set?
+                                                    <label><input name="question_2" type="checkbox" class="icheck">A trusted PKI issues certificates.
                                                     </label>
                                                 </div>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <label><input name="question_3" type="checkbox" title=" Is breakable by any state actor and most organized criminal groups" class="icheck">No export grade encryption algorithms are used?
+                                                    <label><input name="question_3" type="checkbox" class="icheck">No export-grade encryption algorithms.
                                                     </label>
                                                 </div>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <label><input name="question_4" type="checkbox" title="Failing to check certificates for revocation allows stolen certificates to be used by unauthorized individuals or systems" class="icheck">Certificates are issued by a trusted PKI?
+                                                    <label><input name="question_4" type="checkbox" class="icheck">All communications to the network's edge are secured using the most recent version of TLS with perfect forward secrecy and a modern cipher set.
                                                     </label>
                                                 </div>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <label><input name="question_5" type="checkbox" title="Transport security is critical to protect the confidentiality of submitted requests" class="icheck">Certificates are checked for revocation on every call?
+                                                    <label><input name="question_5" type="checkbox" class="icheck">Authentication should include a set of claims.
                                                     </label>
                                                 </div>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <label><input name="question_6" type="checkbox" title="Allowing expired certificates to be used while calling APIs violates a key PKI control and permits attackers to abuse older or decommissioned but still active systems" class="icheck">Certificates are checked for validity period on every call?
+                                                    <label><input name="question_6" type="checkbox" class="icheck">Use the API Gateway to validate the Bearer token
                                                     </label>
                                                 </div>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <label><input name="question_7" type="checkbox" title="Ensure that the certificate has not been stolen by an unauthorized system or individual" class="icheck">Certificates are checked against presented server names for every call?
+                                                    <label><input name="question_7" type="checkbox" class="icheck">Ensure the API Gateway does not cache.
                                                     </label>
                                                 </div>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <label><input name="question_8" type="checkbox" title="Wildcard certificates and SAN certificates allow the same certificate to be shared by multiple systems, thereby weakening or eliminating the security control of 1.7" class="icheck">Certificates uniquely identify a specific system? i.e. wildcard certificates are not used?
+                                                    <label><input name="question_8" type="checkbox" class="icheck">No export-grade encryption algorithms.
                                                     </label>
                                                 </div>
                                                 
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_9" type="checkbox" title="Proper control of certificates includes not allowing developers to access certificates and private keys" class="icheck">Certificates are properly controlled to ensure their private keys are protected?
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_10" type="checkbox" title="Helps protect your API product against malicious certificate issuance by ensuring complying clients only trust a certificate that you have authorized to be issued" class="icheck">Certificate pinning or another suitable certificate protection method should be employed?
-                                                    </label>
-                                                </div>
-
                                             </div><!-- /step 1-->
 
                                             <div class="step">
-                                                <h3 class="main_question"><strong>2/4</strong>What your poject need?</h3>
-
-                                                <div class="row add_bottom_30">
-                                                   
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group checkbox_questions">
-                                                            <label>
-                                                                <input name="question_2[]" type="checkbox" value="Custom interface and layout" class="icheck required">Custom interface and layout
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-group checkbox_questions">
-                                                            <label>
-                                                                <input name="question_2[]" type="checkbox" value="Web site design" class="icheck required">Web site design
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-group checkbox_questions">
-                                                            <label>
-                                                                <input name="question_2[]" type="checkbox" value="Seo optimization" class="icheck required">Seo optimization
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group checkbox_questions">
-                                                            <label>
-                                                                <input name="question_2[]" type="checkbox" value="CMS integrations (Wordpress)" class="icheck required">CMS integrations (Wordpress)
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-group checkbox_questions">
-                                                            <label>
-                                                                <input name="question_2[]" type="checkbox" value="Domain registration" class="icheck required">Domain registration
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-group checkbox_questions">
-                                                            <label>
-                                                                <input name="question_2[]" type="checkbox" value="Hosting plan" class="icheck required">Hosting plan
-                                                            </label>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div><!-- /row-->
-                                                <div class="form-group textarea_info">
-                                                    <label>Additional info</label>
-                                                    <textarea name="addtional_info" class="form-control" style="height:150px;" placeholder="How many pages, other details, etc..."></textarea>
+                                                <h3 class="main_question"><strong>2/6</strong>Authorization and Access Control</h3>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_9" type="checkbox" class="icheck">Authorization results are not cached.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_10" type="checkbox" class="icheck">If OAuth, users can revoke tokens without administrator assistance.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_11" type="checkbox" class="icheck">Return 403 for OAuth authorization failure.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_12" type="checkbox" class="icheck">All code paths should require authorization.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_13" type="checkbox" class="icheck">Use scope claims to constrain the activities of a caller.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_14" type="checkbox" class="icheck">Sensitive information should not be visible in paths.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_15" type="checkbox" class="icheck">Sensitive information should not be visible in headers.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_16" type="checkbox" class="icheck">The API Gateway evaluates the calling application to authorize access to an endpoint.
+                                                    </label>
                                                 </div>
                                             </div><!-- /step 2-->
 
                                             <div class="step">
-                                                <h3 class="main_question"><strong>3/4</strong>Please answer the following questions:</h3>
-
-                                                <div class="row">
-                                                   
-                                                    <div class="col-lg-10">
-                                                        <div class="form-group select">
-                                                            <label>If you already have an hosting plan, please define:</label>
-                                                            <div class="styled-select">
-                                                                <select class="required" name="select_1">
-                                                                    <option value="" selected>Select</option>
-                                                                    <option value="Unix/Linux + Mysql">Unix/Linux + Mysql</option>
-                                                                    <option value="Windows + Sql">Windows + Sql</option>
-                                                                    <option value="Other">Other</option>
-                                                                </select>
-                                                            </div>
-                                                        </div><!-- /select-->
-
-                                                        <div class="form-group select">
-                                                            <label>If you need an hosting plan, please define which one:</label>
-                                                            <div class="styled-select">
-                                                                <select class="required" name="select_2">
-                                                                    <option value="" selected>Select</option>
-                                                                    <option value="Hosting Plan 1 year + Mysql database 500MB">1 year + Mysql database 500MB</option>
-                                                                    <option value="Hosting Plan 2 year + Mysql database 500MB">2 year + Mysql database 500MB</option>
-                                                                    <option value="Hosting Plan 2 year + Mysql database 1GB">2 year + Mysql database 1GB</option>
-                                                                </select>
-                                                            </div>
-                                                        </div><!-- /select-->
-
-                                                        <div class="form-group select">
-                                                            <label>If you need a newsletter campaign, please define the provider you prefer:</label>
-                                                            <div class="styled-select">
-                                                                <select class="required" name="select_3">
-                                                                    <option value="" selected>Select</option>
-                                                                    <option value="Mailchimp">Mailchimp</option>
-                                                                    <option value="CampaignMonitor">CampaignMonitor</option>
-                                                                    <option value="MailUp">MailUp</option>
-                                                                </select>
-                                                            </div>
-                                                        </div><!-- /select-->
-                                                    </div>
-                                                </div><!-- /row-->
+                                                <h3 class="main_question"><strong>3/6</strong>Request Validation</h3>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_17" type="checkbox" class="icheck">Use correlation keys requested from clients.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_18" type="checkbox" class="icheck">If a client does not provide a correlation key, have the API Gateway create one.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_19" type="checkbox" class="icheck">Encrypt context.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_20" type="checkbox" class="icheck">Verify content types in request bodies.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_21" type="checkbox" class="icheck">Reject requests that do not send accepted content.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_22" type="checkbox" class="icheck">Content is verified to be syntactically correct.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_23" type="checkbox" class="icheck">Verify content against a schema.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_24" type="checkbox" class="icheck">Request bodies are not directly bound to data objects.
+                                                    </label>
+                                                </div>
                                             </div><!-- /step 3-->
+
+                                            <div class="step">
+                                                <h3 class="main_question"><strong>4/6</strong>Response Handling</h3>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_25" type="checkbox" class="icheck">Do not return unnecessary information about the nature of an error.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_26" type="checkbox" class="icheck">Error responses should only include sufficient information for a consumer to know how to correct their request
+                                                    </label>
+                                                </div>
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_27" type="checkbox" class="icheck">Sensitive information should not be visible in response headers.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_28" type="checkbox" class="icheck">Use the no-cache directive on API endpoints.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_29" type="checkbox" class="icheck">Use Cache-Control headers to identify stale information.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_30" type="checkbox" class="icheck">Disable caching.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_31" type="checkbox" class="icheck">Redact sensitive information.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_32" type="checkbox" class="icheck">Enable CORS for APIs running in a browser.
+
+                                                    </label>
+                                                </div>
+                                            </div><!-- /step 4-->
+
+                                            <div class="step">
+                                                <h3 class="main_question"><strong>5/6</strong>Data Protection and Handling</h3>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_33" type="checkbox" class="icheck">Responses should not contain sensitive data.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_34" type="checkbox" class="icheck">Parameterize SQL queries.
+                                                    </label>
+                                                </div>
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_35" type="checkbox" class="icheck">Do not use dynamic SQL in stored procedures.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_36" type="checkbox" class="icheck">JSON is not evaluated directly as JavaScript.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_37" type="checkbox" class="icheck">Do not execute binary code or script code in the body.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_38" type="checkbox" class="icheck">Log security events into a centralized security event system.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_39" type="checkbox" class="icheck">Convert exceptions to standardized errors.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_40" type="checkbox" class="icheck">Patch critical vulnerabilities immediately.
+
+                                                    </label>
+                                                </div>
+                                            </div><!-- /step 5-->
 
                                             <div class="submit step">
 
-                                                <h3 class="main_question"><strong>4/4</strong>Please fill with your details</h3>
-
-                                                <div class="row">
-                                                   
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <input type="text" name="company_name" class="form-control" placeholder="Your company name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" name="firstname" class="required form-control" placeholder="First name">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" name="lastname" class="required form-control" placeholder="Last name">
-                                                        </div>
-                                                    </div><!-- /col-sm-6 -->
-
-                                                    <div class="col-sm-6">
-                                                        <div class="form-group">
-                                                            <input type="email" name="email" class="required form-control" placeholder="Your Email">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <input type="text" name="telephone" class="required form-control" placeholder="Your Telephone">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <div class="styled-select">
-                                                                <select class="required" name="country">
-                                                                    <option value="" selected>Select your country</option>
-                                                                    <option value="Europe">Europe</option>
-                                                                    <option value="Asia">Asia</option>
-                                                                    <option value="North America">North America</option>
-                                                                    <option value="South America">South America</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div><!-- /col-sm-6 -->
-                                                </div><!-- /row -->
+                                                <h3 class="main_question"><strong>6/6</strong>Access Control and Management</h3>
                                                 
                                                 <div class="form-group checkbox_questions">
-                                                    <input name="terms" type="checkbox" class="icheck required" value="yes">
-                                                    <label>Please accept <a href="#" data-toggle="modal" data-target="#terms-txt">terms and conditions</a> ?
+                                                    <label><input name="question_41" type="checkbox" class="icheck">Use network isolation techniques.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_42" type="checkbox" class="icheck">Check sudden changes in API usage.
+                                                    </label>
+                                                </div>
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_43" type="checkbox" class="icheck">Only appropriate personnel can disable an API.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_44" type="checkbox" class="icheck">Only appropriate personnel can disable access to APIs by applications.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_45" type="checkbox" class="icheck">Mark data with a security classification to identify its appropriate usage.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_46" type="checkbox" class="icheck">As a rule, developers cannot modify code in any environment without following the standard code progression path.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_47" type="checkbox" class="icheck">Use automated tests.
+                                                    </label>
+                                                </div>
+                                                
+                                                <div class="form-group checkbox_questions">
+                                                    <label><input name="question_48" type="checkbox" class="icheck">Record and track technical debt.
+
                                                     </label>
                                                 </div>
 
-                                            </div><!-- /step 4-->
+                                            </div><!-- /step 6-->
 
                                         </div><!-- /middle-wizard -->
                                         <div id="bottom-wizard">
@@ -467,8 +539,8 @@
                     
                     <div class="tab-pane fade" id="tab_3">
                         
-                        <div id="map_contact">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3465015555657!2d-73.99830322397337!3d40.732400471390555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25911fd7a292d%3A0x7e707e041035c47!2sThe%20Brevoort!5e0!3m2!1sen!2sus!4v1698799895827!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div id="map_contact" class="container map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.3465015555657!2d-73.99830322397337!3d40.732400471390555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25911fd7a292d%3A0x7e707e041035c47!2sThe%20Brevoort!5e0!3m2!1sen!2sus!4v1698799895827!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div><!-- /map -->
                         
                         <div id="contact_info">
