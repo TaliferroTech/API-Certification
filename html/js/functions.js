@@ -121,7 +121,7 @@
 
 	/*  Wizard */
 	jQuery(function ($) {
-		$('form#wrapped').attr('action', 'quote_send.php');
+	//	$('form#wrapped').attr('action', 'quote_send.php');
 		$("#wizard_container").wizard({
 			stepsWrapper: "#wrapped",
 			submit: ".submit",
@@ -142,7 +142,7 @@
 					error.insertAfter(element);
 				}
 			}
-		});
+		}); 
 		//  progress bar
 		$("#progressbar").progressbar();
 		$("#wizard_container").wizard({

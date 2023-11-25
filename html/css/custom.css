@@ -11,3 +11,12 @@
 iframe{
     width: 100%;
 }
+
+label {
+    display:flex;
+    align-items: baseline;
+}
+
+input[type=checkbox] {
+    margin-right: 8px;
+}
