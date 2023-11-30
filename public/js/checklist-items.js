@@ -319,8 +319,8 @@ function calculateScore() {
 
 }
 
-$(document).ready(function() {
+/* $(document).ready(function() {
 	$("#assessment").click(function() {
 	  $("tab_1").tab('show'); // This triggers the tab to be shown
 	});
-  });
+  }); */
