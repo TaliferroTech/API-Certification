@@ -1675,10 +1675,10 @@ blockquote.styled .small:before, blockquote.styled small:before {
 /*============================================================================================*/
 /* 4. RESPONSIVE  */
 /*============================================================================================*/
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 	video {display:none;}
 	.video_fallback{background: url(../img/slides/slide_1.jpg) center center no-repeat; background-size:cover;display:block; position:fixed;top: 0;right: 0;bottom: 0;left: 0;overflow: hidden;}
-}
+} */
 @media (max-width: 991px) {
 	#main_container {width:100%;}
 	#wizard_container {border-left: 0;}
