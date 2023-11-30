@@ -468,9 +468,9 @@ footer ul li:first-child {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.video_fallback{
+/* .video_fallback{
 	display:none;
-}
+} */
 .intro_txt {
     position: absolute;
     top: 34%;
