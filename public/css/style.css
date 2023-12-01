@@ -547,7 +547,7 @@ footer ul li:first-child {
 .box_feat h3 {
     text-transform: uppercase;
     font-size: 18px;
-    color: #f5ab35;
+    color: #757589;
 }
 .box_feat#icon_1 {
     background: #fff url(../img/icon_about_1.svg) no-repeat center 40px;
@@ -617,13 +617,13 @@ footer ul li:first-child {
     border-bottom: 1px solid #e8ebed;
 }
 .subheader#about {
-    background: #fff4e3 url(../img/about_bg.svg) no-repeat center bottom;
+    background: #C7C7D5 url(../img/about_bg.svg) no-repeat center bottom;
 }
 .subheader#quote {
-    background: #fff4e3 url(../img/quote_bg.svg) no-repeat center bottom;
+    background: #C7C7D5 url(../img/quote_bg.svg) no-repeat center bottom;
 }
 .subheader#services {
-    background: #fff4e3 url(../img/services_bg.svg) no-repeat center bottom;
+    background: #C7C7D5 url(../img/services_bg.svg) no-repeat center bottom;
 }
 .subheader h3 {
     font-size: 32px;
@@ -803,14 +803,14 @@ button.submit.circle:before {
 .ui-widget textarea,
 .ui-widget button {}
 .ui-widget-content {
-    background: #ffcc7b;
+    background: #C7C7D5;
     color: #222222;
 }
 .ui-widget-content a {
     color: #222222;
 }
 .ui-widget-header {
-    background: #f5ab35;
+    background: #757589;
 }
 .ui-widget-header a {
     color: #222222;
@@ -891,7 +891,7 @@ span.error:after {
     margin-right: 10px;
 }
 .form-group.radio_questions label:hover {
-    border: 2px solid #ffcc33;
+    border: 2px solid #C7C7D5;
 }
 .form-group.select {
     margin-bottom: 30px;
@@ -962,7 +962,7 @@ textarea.form-control {
 input.form-control:focus,
 select.form-control:focus,
 textarea.form-control:focus {
-    border-color: #ffcc33;
+    border-color: #C7C7D5;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1121,7 +1121,7 @@ textarea.form-control:focus {
     text-align: center;
     height: 300px;
     border-bottom: 1px solid #e8ebed;
-	background: #fff4e3 url(../img/shortcodes_bg.svg) no-repeat center bottom;
+	background: #C7C7D5 url(../img/shortcodes_bg.svg) no-repeat center bottom;
 }
 #logo_in {
     position: absolute;
