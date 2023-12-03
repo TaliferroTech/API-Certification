@@ -294,8 +294,9 @@ function calculateScore() {
 	// Display the score in the DOM
 	
 	const scoreDisplay = document.getElementById('wizard_container');
-	scoreDisplay.textContent = 'Your API Security Score Is: ' + score + ' points';
+	scoreDisplay.textContent = 'Your API Security Score Is: ' + score;
 
+	scoreDisplay.style.padding = '20px';
 	
 
 	if(score < 21){
@@ -316,11 +317,16 @@ function calculateScore() {
 	else {
 		//do nothing
 	}
-
 }
 
-/* $(document).ready(function() {
-	$("#assessment").click(function() {
-	  $("tab_1").tab('show'); // This triggers the tab to be shown
+document.addEventListener('DOMContentLoaded', function () {
+	// Get references to the form and aside elements
+	const form = document.getElementById('wrapped');
+	const aside = document.getElementById('evaluate');
+
+	// Add an event listener to the "Next" button
+	document.getElementById('forward').addEventListener('click', function () {
+	  // Hide the aside element
+	  aside.style.display = 'none';
 	});
-  }); */
+  });

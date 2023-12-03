@@ -490,7 +490,7 @@ footer ul li:first-child {
 }
 .intro_txt p {
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 16px;
 }
 /* Addtional links / Footer */
 #additional_links {
@@ -550,16 +550,16 @@ footer ul li:first-child {
     color: #757589;
 }
 .box_feat#icon_1 {
-    background: #fff url(../img/icon_about_1.svg) no-repeat center 40px;
+    background: #fff url(../img/icon_about_1.jpg) no-repeat center 40px;
 }
 .box_feat#icon_2 {
-    background: #fff url(../img/icon_about_2.svg) no-repeat center 40px;
+    background: #fff url(../img/icon_about_22.jpg) no-repeat center 40px;
 }
 .box_feat#icon_3 {
-    background: #fff url(../img/icon_about_3.svg) no-repeat center 40px;
+    background: #fff url(../img/icon_about_3.jpg) no-repeat center 40px;
 }
 .box_feat#icon_4 {
-    background: #fff url(../img/icon_about_4.svg) no-repeat center 40px;
+    background: #fff url(../img/icon_about_4.jpg) no-repeat center 40px;
 }
 .about_info {
     padding-left: 80px;
@@ -617,10 +617,10 @@ footer ul li:first-child {
     border-bottom: 1px solid #e8ebed;
 }
 .subheader#about {
-    background: #C7C7D5 url(../img/about_bg.svg) no-repeat center bottom;
+    background: #C7C7D5 url(../img/about_bg.webp) no-repeat center bottom;
 }
 .subheader#quote {
-    background: #C7C7D5 url(../img/quote_bg.svg) no-repeat center bottom;
+    background: #C7C7D5 url(../img/quote_bg.webp) no-repeat center bottom;
 }
 .subheader#services {
     background: #C7C7D5 url(../img/services_bg.svg) no-repeat center bottom;
