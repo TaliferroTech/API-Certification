@@ -1,0 +1,40 @@
+{
+    "name": "Taliferro: API Security Assessment",
+    "short_name": "Taliferro Group",
+    "icons": [
+        {
+            "src": "/img/apple-touch-icon-144x144-precomposed.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/apple-touch-icon-114x114-precomposed.png",
+            "sizes": "114x114",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/apple-touch-icon-72x72-precomposed.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/ico",
+            "purpose": "maskable"
+          }
+    ],
+    "start_url": "/index.html",
+    "theme_color": "#5195d9",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "description": "Assess your API security with our comprehensive checklist quiz. Receive a score from 0 to 100, gaining insights into the strength of your API security measures. Enhance your API protection and ensure robust cybersecurity with our interactive assessment tool.",
+    "screenshots": [
+        {
+          "src": "/img/apple-touch-icon-144x144-precomposed.png",
+          "type": "image/webp",
+          "sizes": "144x144"
+        }
+    ]
+}
