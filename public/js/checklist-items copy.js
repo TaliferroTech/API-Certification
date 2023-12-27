@@ -1,31 +1,54 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import {
-  getFunctions,
-  httpsCallable,
-  connectFunctionsEmulator,
-} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js";
+var submitButton = document.getElementById("process");
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBBa2iIUnEFhKhVHT3wcepiVEl4BOfOOYA",
-  authDomain: "taliferro-de66f.firebaseapp.com",
-  databaseURL: "https://taliferro-de66f.firebaseio.com",
-  projectId: "taliferro-de66f",
-  storageBucket: "taliferro-de66f.appspot.com",
-  messagingSenderId: "353334442276",
-  appId: "1:353334442276:web:45b043204cc83aa7725bb1",
-  measurementId: "G-ZH2TKFHVZ7",
-};
+//function calculateScore(quizQuestions, numberOfPoints){
 
-const app = initializeApp(firebaseConfig);
+/* // gather answers from our quiz
+	var answers = quizQuestions.querySelectorAll('.points');
+	
+	// keep track of user's answers
+	var userAnswer = '';
+	var totalPoints = 0;
+	
+	// for each question...
+	for(var i=0; i<quizQuestions.length; i++){
 
-const functions = getFunctions(app);
-if (window.location.hostname === "127.0.0.1") {
-  console.log("connecting emulator");
-  connectFunctionsEmulator(functions, "127.0.0.1", 5001);
-}
-const evaluation = httpsCallable(functions, "evaluateAPIChecklist");
+		// find selected answer
+		userAnswer = (quizQuestions[i].querySelector('input[name=question_'+i+']:checked')||{}).value;
+		
+		// if answer is correct
+		if(document.getElementsByClassName("icheck").checked){
+			// add to the total number of points
+			totalPoints = 96 / 48 * quizQuestions[i].points;
+			
+		}
+		else{
+			// do nothing if unchecked
+		}
+	}
 
-function displayScore(score) {
+	// show score
+	submitButton.onclick = 
+	//	document.getElementById(wizard_container).innerHTML = 'Your score is:;
+	console.log("It's me."); */
+
+//}
+
+document.getElementById("process").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+  calculateScore();
+});
+
+function calculateScore() {
+  // Get all checkboxes in the form
+  const checkboxes = document.querySelectorAll(
+    'input[type="checkbox"]:checked'
+  );
+
+  // Count the number of checked checkboxes and calculate the score
+  const score = ((checkboxes.length * 2) / 96) * 100;
+
+  // Display the score in the DOM
+
   const scoreDisplay = document.getElementById("wizard_container");
   scoreDisplay.textContent = "Your API Security Score Is: " + Math.trunc(score);
 
@@ -64,17 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get references to the form and aside elements
   const form = document.getElementById("wrapped");
   const aside = document.getElementById("evaluate");
-
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const answers = {};
-    for (const [question, result] of formData.entries()) {
-      answers[question] = result;
-    }
-    const response = await evaluation({ answers });
-    displayScore(response.data.score);
-  });
 
   // Add an event listener to the "Next" button
   document.getElementById("forward").addEventListener("click", function () {

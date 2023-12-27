@@ -1,0 +1,290 @@
+[
+  {
+    "question": "Check certificate revocation on every call.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_1"
+  },
+  {
+    "question": "A trusted PKI issues certificates.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_2"
+  },
+  {
+    "question": "No export-grade encryption algorithms.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_3"
+  },
+  {
+    "question": "All communications to the network's edge are secured using the most recent version of TLS with perfect forward secrecy and a modern cipher set.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_4"
+  },
+  {
+    "question": "Authentication should include a set of claims.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_5"
+  },
+  {
+    "question": "Use the API Gateway to validate the Bearer token",
+    "points": 2,
+    "weight": 1,
+    "id": "question_6"
+  },
+  {
+    "question": "Ensure the API Gateway does not cache.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_7"
+  },
+  {
+    "question": "No export-grade encryption algorithms.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_8"
+  },
+  {
+    "question": "Authorization results are not cached.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_9"
+  },
+  {
+    "question": "If OAuth, users can revoke tokens without administrator assistance.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_10"
+  },
+  {
+    "question": "Return 403 for OAuth authorization failure.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_11"
+  },
+  {
+    "question": "All code paths should require authorization.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_12"
+  },
+  {
+    "question": "Use scope claims to constrain the activities of a caller.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_13"
+  },
+  {
+    "question": "Sensitive information should not be visible in paths.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_14"
+  },
+  {
+    "question": "Sensitive information should not be visible in headers.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_15"
+  },
+  {
+    "question": "The API Gateway evaluates the calling application to authorize access to an endpoint.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_16"
+  },
+  {
+    "question": "Use correlation keys requested from clients.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_17"
+  },
+  {
+    "question": "Encrypt context.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_18"
+  },
+  {
+    "question": "Verify content types in request bodies.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_19"
+  },
+  {
+    "question": "Reject requests that do not send accepted content.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_20"
+  },
+  {
+    "question": "Content is verified to be syntactically correct.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_21"
+  },
+  {
+    "question": "Verify content against a schema.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_22"
+  },
+  {
+    "question": "Request bodies are not directly bound to data objects.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_23"
+  },
+  {
+    "question": "If a client does not provide a correlation key, have the API Gateway create one.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_24"
+  },
+  {
+    "question": "Do not return unnecessary information about the nature of an error.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_25"
+  },
+  {
+    "question": "Error responses should only include sufficient information for a consumer to know how to correct their request.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_26"
+  },
+  {
+    "question": "Sensitive information should not be visible in response headers.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_27"
+  },
+  {
+    "question": "Use the no-cache directive on API endpoints.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_28"
+  },
+  {
+    "question": "Use Cache-Control headers to identify stale information.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_29"
+  },
+  {
+    "question": "Disable caching.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_30"
+  },
+  {
+    "question": "Redact sensitive information.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_31"
+  },
+  {
+    "question": "Enable CORS for APIs running in a browser.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_32"
+  },
+  {
+    "question": "Responses should not contain sensitive data.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_33"
+  },
+  {
+    "question": "Parameterize SQL queries.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_34"
+  },
+  {
+    "question": "Do not use dynamic SQL in stored procedures.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_35"
+  },
+  {
+    "question": "JSON is not evaluated directly as JavaScript.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_36"
+  },
+  {
+    "question": "Do not execute binary code or script code in the body.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_37"
+  },
+  {
+    "question": "Log security events into a centralized security event system.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_38"
+  },
+  {
+    "question": "Convert exceptions to standardized errors.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_39"
+  },
+  {
+    "question": "Patch critical vulnerabilities immediately.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_40"
+  },
+  {
+    "question": "Use network isolation techniques.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_41"
+  },
+  {
+    "question": "Check sudden changes in API usage.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_42"
+  },
+  {
+    "question": "Only appropriate personnel can disable an API.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_43"
+  },
+  {
+    "question": "Only appropriate personnel can disable access to APIs by applications.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_44"
+  },
+  {
+    "question": "Mark data with a security classification to identify its appropriate usage.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_45"
+  },
+  {
+    "question": "As a rule, developers cannot modify code in any environment without following the standard code progression path.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_46"
+  },
+  {
+    "question": "Use automated tests.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_47"
+  },
+  {
+    "question": "Record and track technical debt.",
+    "points": 2,
+    "weight": 1,
+    "id": "question_48"
+  }
+]
