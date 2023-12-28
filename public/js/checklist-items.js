@@ -1,29 +1,10 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import {
-  getFunctions,
-  httpsCallable,
-  connectFunctionsEmulator,
-} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyBBa2iIUnEFhKhVHT3wcepiVEl4BOfOOYA",
-  authDomain: "taliferro-de66f.firebaseapp.com",
-  databaseURL: "https://taliferro-de66f.firebaseio.com",
-  projectId: "taliferro-de66f",
-  storageBucket: "taliferro-de66f.appspot.com",
-  messagingSenderId: "353334442276",
-  appId: "1:353334442276:web:45b043204cc83aa7725bb1",
-  measurementId: "G-ZH2TKFHVZ7",
-};
-
-const app = initializeApp(firebaseConfig);
-
-const functions = getFunctions(app);
-if (window.location.hostname === "127.0.0.1") {
-  console.log("connecting emulator");
-  connectFunctionsEmulator(functions, "127.0.0.1", 5001);
+const functions = firebase.functions();
+if (window.location.hostname === "localhost") {
+  console.log("connecting firebase functions emulator");
+  functions.useEmulator("127.0.0.1", 5001);
 }
-const evaluation = httpsCallable(functions, "evaluateAPIChecklist");
+
+const evaluation = functions.httpsCallable(functions, "evaluateAPIChecklist");
 
 function displayScore(score) {
   const scoreDisplay = document.getElementById("wizard_container");

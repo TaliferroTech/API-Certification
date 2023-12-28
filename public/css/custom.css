@@ -20,3 +20,7 @@ label {
 input[type=checkbox] {
     margin-right: 8px;
 }
+
+.auth_container {
+   margin-top: 100px;
+}

@@ -2,7 +2,7 @@ import { onCall, onRequest, HttpsError } from "firebase-functions/v2/https";
 import { logger } from "firebase-functions/v2";
 import * as checklist from "./repo/checklist.json";
 
-export const apiChecklist = onRequest((_req, res) => {
+export const apiChecklist = onRequest({ cors: true }, (_req, res) => {
   res.status(200).json(checklist);
 });
 
