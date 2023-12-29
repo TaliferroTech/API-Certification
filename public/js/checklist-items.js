@@ -1,10 +1,13 @@
 const functions = firebase.functions();
-if (window.location.hostname === "localhost") {
+if (
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1"
+) {
   console.log("connecting firebase functions emulator");
   functions.useEmulator("127.0.0.1", 5001);
 }
 
-const evaluation = functions.httpsCallable(functions, "evaluateAPIChecklist");
+const evaluation = functions.httpsCallable("calculateScore");
 
 function displayScore(score) {
   const scoreDisplay = document.getElementById("wizard_container");
@@ -40,21 +43,26 @@ function displayScore(score) {
     //do nothing
   }
 }
+const process = document.getElementById("process");
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get references to the form and aside elements
   const form = document.getElementById("wrapped");
   const aside = document.getElementById("evaluate");
 
-  form.addEventListener("submit", async (event) => {
+  process.addEventListener("click", async (event) => {
     event.preventDefault();
-    const formData = new FormData(form);
-    const answers = {};
-    for (const [question, result] of formData.entries()) {
-      answers[question] = result;
+    try {
+      const formData = new FormData(form);
+      const answers = {};
+      for (const [question, result] of formData.entries()) {
+        answers[question] = result;
+      }
+      const response = await evaluation({ answers });
+      displayScore(response.data.score);
+    } catch (error) {
+      console.log("error:", error);
     }
-    const response = await evaluation({ answers });
-    displayScore(response.data.score);
   });
 
   // Add an event listener to the "Next" button

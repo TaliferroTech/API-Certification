@@ -6,13 +6,13 @@ export const apiChecklist = onRequest({ cors: true }, (_req, res) => {
   res.status(200).json(checklist);
 });
 
-export const evaluateAPIChecklist = onCall(
+export const calculateScore = onCall(
   {
     cors: [
-      "http://127.0.0.1:5000",
-      "https://api-certification.web.app/",
-      "api-certification.firebaseapp.com",
-      "api-certification.taliferro.com",
+      /(http:\/\/)?(localhost|127.0.0.1):\d{d}/,
+      /(http:\/\/|https:\/\/)?api-certification\.web\.app/,
+      /(http:\/\/|https:\/\/)?api-certification\.firebaseapp\.app/,
+      /(http:\/\/|https:\/\/)?api-certification\.taliferro\.app/,
     ],
   },
   (request) => {
@@ -31,7 +31,7 @@ export const evaluateAPIChecklist = onCall(
       maxPoints: 0,
     };
 
-    for (const [_, entry] of answers.entries()) {
+    for (const [_, entry] of checklist.entries()) {
       const entryId = entry.id;
       if (answers[entryId]) {
         results.points += entry.points * entry.weight;
@@ -40,7 +40,7 @@ export const evaluateAPIChecklist = onCall(
     }
 
     results.score = Math.round((results.points / results.maxPoints) * 100);
-    logger.log("sending results to client...");
+    logger.log("sending results to client...", results);
     return results;
   },
 );
