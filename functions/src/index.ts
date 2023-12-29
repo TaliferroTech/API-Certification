@@ -9,7 +9,7 @@ export const apiChecklist = onRequest({ cors: true }, (_req, res) => {
 export const calculateScore = onCall(
   {
     cors: [
-      /(http:\/\/)?(localhost|127.0.0.1):\d{d}/,
+      /(http:\/\/)?(localhost|127\.0\.0\.1):\d{d}/,
       /(http:\/\/|https:\/\/)?api-certification\.web\.app/,
       /(http:\/\/|https:\/\/)?api-certification\.firebaseapp\.app/,
       /(http:\/\/|https:\/\/)?api-certification\.taliferro\.app/,

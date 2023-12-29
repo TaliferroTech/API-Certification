@@ -43,10 +43,10 @@ function displayScore(score) {
     //do nothing
   }
 }
-const process = document.getElementById("process");
 
 document.addEventListener("DOMContentLoaded", function () {
   // Get references to the form and aside elements
+  const process = document.getElementById("process");
   const form = document.getElementById("wrapped");
   const aside = document.getElementById("evaluate");
 
