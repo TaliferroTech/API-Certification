@@ -124,13 +124,13 @@
 
     <header>
       <div id="logo_home">
-        <h1>
+        <!-- <h1>
           <a
             href="index.html"
             title="A link to the homepage of the Taliferro Group  API Evaluation site"
             >API Evaluation - Answer some questions, get your API Score</a
           >
-        </h1>
+        </h1> -->
       </div>
 
       <a
@@ -180,7 +180,7 @@
     <!-- /header -->
 
     <div class="intro_txt animated fadeInUp">
-      <h2>Is your API Secure?</h2>
+      <h2>API Security Check</h2>
       <p
         title="Please note: For a more comprehensive and accurate analysis, feel free to contact us. Our team can perform an exhaustive evaluation of your API and provide a certification of its security. This in-depth service is designed for those seeking an enhanced level of analysis and assurance."
       >
@@ -1237,8 +1237,15 @@
     <div id="additional_links">
       <ul>
         <li>
-          ® 2023 Taliferro - Taliferro Is Registered In The U.S. Patent And
-          Trademark Office.
+          ® <span id="cw-date">2023</span>
+          <a
+            href="https://taliferro.com/"
+            title="A link to the homepage of the Taliferro Group API Evaluation site"
+            class="animated_link"
+            target="_blank"
+            >Taliferro</a
+          >
+          - Taliferro Is Registered In The U.S. Patent And Trademark Office.
         </li>
         <!-- <li><a href="#" class="animated_link tab-link" data-tab-id="tab_1">Start Assessment</a></li>
             <li><a href="index_2.html" class="animated_link">About</a></li>
@@ -1341,5 +1348,10 @@
     <!-- <script src="js/auth.js"></script> -->
     <!-- Checklist -->
     <script src="js/checklist-items.js"></script>
+
+    <script>
+      const cwDate = document.getElementById("cw-date");
+      cwDate.innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
