@@ -10,8 +10,3 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-
-const analytics = firebase.analytics();
-
-analytics.logEvent("page_view");
-analytics.logEvent("select_item", { "item_id": "tab_1" });
