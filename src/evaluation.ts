@@ -1,4 +1,4 @@
-import {functions} from "./firebase.config";
+import {functions} from "./firebaseConfig";
 import {HttpsCallableResult, httpsCallable} from "firebase/functions";
 import {getCookie, getOutboundLinks, setCookie} from "./helpers";
 import {AssessmentData, ChecklistSubmission} from "./mailChecklist.types";
