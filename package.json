@@ -1,0 +1,30 @@
+{
+  "name": "api-certification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.js",
+  "scripts": {
+    "build": "./bundler/bundle && cd ./functions && tsc",
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts",
+    "format": "prettier --write \"**/*.+(js|ts|json)\"",
+    "deploy": "firebase deploy --only functions,hosting --project taliferro-de66f",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.18",
+    "@types/node": "^20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0",
+    "firebase": "^10.8.0"
+  }
+}

@@ -1,519 +1,768 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta name="description" content="Assess your API security with our comprehensive checklist. Receive a score from 0 to 100, gaining insights into the strength of your API security measures. Enhance your API protection and ensure robust cybersecurity with our interactive assessment tool.">
-    <meta name="author" content="Taliferro Group">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>API Security Service - Get a free assessment today!</title>
+  <meta property="og:title" content="API Security Service - Get a free assessment today!" />
 
-    <meta property="og:title" content="API Security Service - Get a free assessment today!">
-    <meta property="og:description" content="Assess your API security with our comprehensive checklist quiz. Receive a score from 0 to 100, gaining insights into the strength of your API security measures. Enhance your API protection and ensure robust cybersecurity with our interactive assessment tool.">
-    <meta property="og:image" content="https://taliferro.com/assets/images/taliferro-group-logo.png">
-    <meta property="og:url" content="https://api-certification.web.app/">
-    
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@TaliferroLLC" />
-    <meta name="twitter:title" content="API Security Service" />
-    <meta name="twitter:description" content="API Security Certification">
-    <meta name="twitter:image" content="https://taliferro.com/assets/images/taliferro-group-logo.png" />
-    <meta name="twitter:url" content="https://api-certification.web.app/">
+  <meta name="author" content="Taliferro Group" />
 
-    <link rel="canonical" href="https://api-certification.web.app/">
-    <title>API Security Service - Get a free assessment today!</title>
+  <meta name="keywords"
+    content="API security, assessment, checklist, cybersecurity, vulnerabilities, defense, web security, data protection, risk analysis, secure APIs, threat detection, risk mitigation, API testing, web services security" />
 
-    <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" alt="Shortcut icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png" alt="Shortcut icon">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png" alt="Shortcut icon">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png" alt="Shortcut icon">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png" alt="Shortcut icon">
+  <meta name="description"
+    content="Free API security assessment checklist. Identify vulnerabilities, strengthen cybersecurity. Enhance your API defenses now!" />
+  <meta property="og:description"
+    content="Free API security assessment checklist. Identify vulnerabilities, strengthen cybersecurity. Enhance your API defenses now!" />
 
-    <!-- GOOGLE WEB FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <meta property="og:image"
+    content="https://api-certification.taliferro.com/img/apple-touch-icon-1919x884-precomposed.png" />
+  <meta property="og:url" content="https://api-certification.taliferro.com/" />
 
-    <!-- BASE CSS -->
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
-    <link href="css/magnific-popup.min.css" rel="stylesheet">
-    <link href="css/skins/square/yellow.css" rel="stylesheet">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@TaliferroLLC" />
+  <meta name="twitter:title" content="API Security Service" />
+  <meta name="twitter:description" content="API Security Certification" />
+  <meta name="twitter:image"
+    content="https://api-certification.taliferro.com/img/apple-touch-icon-1919x884-precomposed.png" />
+  <meta name="twitter:url" content="https://api-certification.taliferro.com/" />
 
-    <!-- MANIFEST FILE -->
-    <link rel="manifest" href="img/manifest.json">
+  <link rel="canonical" href="https://api-certification.taliferro.com/index.html" />
 
-    <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+  <!-- MANIFEST -->
+  <link rel="manifest" href="img/manifest.json" />
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebApplication",
+        "name": "Taliferro Group API Security Check",
+        "url": "https://api-certification.taliferro.com",
+        "description": "Evaluate the security of your APIs with Taliferro Group's API Security Check. Answer a few questions and receive a comprehensive security score.",
+        "image": "https://api-certification.taliferro.com/img/apple-touch-icon-1919x884-precomposed.png", // Replace with the actual URL of the image
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript",
+        "softwareVersion": "1.0",
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD",
+          "availability": "http://schema.org/OnlineOnly"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Taliferro Group",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1424 11th Ave STE 400",
+            "addressLocality": "Seattle",
+            "addressRegion": "WA",
+            "postalCode": "98122",
+            "addressCountry": "USA"
+          },
+          "telephone": "+12068098529"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "50"
+        }
+      }
+    </script>
 
+  <!-- STYLESHEETS -->
+  <!-- GOOGLE WEB FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet" />
+
+  <!-- BASE CSS -->
+  <link href="css/animate.min.css" rel="stylesheet" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet" />
+  <link href="css/magnific-popup.min.css" rel="stylesheet" />
+  <link href="css/skins/square/yellow.css" rel="stylesheet" />
+
+  <!-- YOUR CUSTOM CSS -->
+  <link href="css/custom.css" rel="stylesheet" />
 </head>
 
 <body>
-    
-    <div id="loader_form">
-		<div data-loader="circle-side-2"></div>
-	</div><!-- /Loader_form -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGFVT427WG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <header>
-        <div id="logo_home">
-            <h1><a href="index.html" title="A link to the homepage of the Taliferro Group  API Evaluation site">API Evaluation - Answer some questions, get your API Score</a></h1>
-        </div>
-        
-        <a id="menu-button-mobile" class="cmn-toggle-switch cmn-toggle-switch__htx" href="javascript:void(0);"><span>Menu mobile</span></a>
-        <nav class="main_nav">
-            <ul class="nav nav-tabs">
-                <li><a href="#tab_1" data-toggle="tab" title="A link to open the evaluation checklist">Evaluate an API</a></li>
-                <li><a href="#tab_2" data-toggle="tab" title="A link to the About tab for the Taliferro Group API checklist site">About</a></li>
-                <li><a href="#tab_3" data-toggle="tab" title="A link to the Contact tab for the Taliferro Group API checklist site">Contact</a></li>
-            </ul>
-        </nav>
-    </header><!-- /header -->
+    gtag('config', 'G-NGFVT427WG');
+  </script>
+  <!-- Google tag (gtag.js) End -->
+  <div id="loader_form">
+    <div data-loader="circle-side-2"></div>
+  </div>
+  <!-- /Loader_form -->
 
-    <div class="intro_txt animated fadeInUp">
-        <h2>Is your API Secure?</h2>
-        <p title="Please note: For a more comprehensive and accurate analysis, feel free to contact us. Our team can perform an exhaustive evaluation of your API and provide a certification of its security. This in-depth service is designed for those seeking an enhanced level of analysis and assurance.">Discover the security level of your API with our easy and <strong>free</strong> self-serve assessment. Simply answer a few questions and instantly see how your API measures up. It's a <strong>quick</strong>, <strong>no-cost</strong> way to gain valuable insights into your API's security. Start your assessment today and take the first step towards a more secure API. It's entirely <strong>free</strong> and informative!
-        </p>
-    </div><!-- /intro_txt -->
-    
-    <video id="my-video" class="video" loop muted autoplay playsinline>
-      <source src="media/demo1.mp4" type="video/mp4">
-      <source src="media/demo.ogv" type="video/ogg">
-      <source src="media/demo.webm" type="video/webm">
-	</video><!-- /video -->
-    <!-- <div class="video_fallback"></div> -->
+  <header>
+    <a id="menu-button-mobile" class="cmn-toggle-switch cmn-toggle-switch__htx" href="#">
+      <span>Menu mobile</span>
+    </a>
+    <nav class="main_nav">
+      <ul class="nav nav-tabs">
+        <li>
+          <a href="#tab_1" data-toggle="tab" title="A link to open the evaluation checklist" id="evaluate_api">Evaluate
+            an API</a>
+        </li>
+        <li>
+          <a href="#tab_2" data-toggle="tab"
+            title="A link to the About tab for the Taliferro Group API checklist site">About</a>
+        </li>
+        <li>
+          <a href="#tab_3" data-toggle="tab"
+            title="A link to the Contact tab for the Taliferro Group API checklist site">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- /header -->
 
-    <div class="layer"></div><!-- /mask -->
+  <div class="intro_txt animated fadeInUp">
+    <h1>API Security Check</h1>
+    <p
+      title="Please note: For a more comprehensive and accurate analysis, feel free to contact us. Our team can perform an exhaustive evaluation of your API and provide a certification of its security. This in-depth service is designed for those seeking an enhanced level of analysis and assurance.">
+      Discover the security level of your API with our easy and
+      <strong>free</strong> self-serve assessment. Simply answer a few
+      questions and instantly see how your API measures up. It's a
+      <strong>quick</strong>, <strong>no-cost</strong> way to gain valuable
+      insights into your API's security. Start your assessment today and take
+      the first step towards a more secure API. It's entirely
+      <strong>free</strong> and informative!
+    </p>
+  </div>
+  <!-- /intro_txt -->
 
-    <div id="main_container">
-       
-        <div id="header_in">
-            <a href="#0" class="close_in " title="Use this to close the tab"><i class="pe-7s-close-circle"></i></a>
-        </div>
+  <video id="my-video" class="video" loop muted autoplay playsinline>
+    <source src="media/demo1.mp4" type="video/mp4" />
+    <source src="media/demo.ogv" type="video/ogg" />
+    <source src="media/demo.webm" type="video/webm" />
+  </video>
+  <!-- /video -->
+  <div class="video_fallback"></div>
 
-        <div class="wrapper_in">
-            <div class="container-fluid">
-                <div class="tab-content">
-                    <div class="tab-pane fade" id="tab_1">                                               
-                        <div class="subheader" id="quote"></div>
-                        <div class="row">
-                            <aside class="col-xl-3 col-lg-4" id="evaluate">
-                                <h2>Evaluate an API and see your score</h2>
-                                <p class="lead">Step through our questionnaire for a free evaluation</p>
-                                <ul class="list_ok">
-                                    <li>Is the communcation mechanism secure?</li>
-                                    <li>Is there an audit trail?</li>
-                                    <li>Has the API been authorized to access the requested resource?</li>
-                                </ul>
-                            </aside><!-- /aside -->
+  <div class="layer"></div>
+  <!-- /mask -->
 
-                            <div class="col-xl-9 col-lg-8">
-                                <div id="wizard_container">
-                                    <div id="top-wizard">
-                                        <strong>Progress</strong>
-                                        <div id="progressbar"></div>
-                                    </div><!-- /top-wizard -->
+  <div id="main_container">
+    <div id="header_in">
+      <a href="#" class="close_in" title="Use this to close the tab"><i class="pe-7s-close-circle"></i></a>
+    </div>
 
-                                    <form name="example-1" id="wrapped" method="POST">
-                                        <input id="website" name="website" type="text" value=""><!-- Leave for security protection, read docs for details -->
-                                        <div id="middle-wizard">
-                                            <div class="step">
-                                                <h3 class="main_question"><strong>1/6</strong>Network Security and Authentication</h3>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_1" type="checkbox" class="icheck">Check certificate revocation on every call.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_2" type="checkbox" class="icheck">A trusted PKI issues certificates.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_3" type="checkbox" class="icheck">No export-grade encryption algorithms.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_4" type="checkbox" class="icheck">All communications to the network's edge are secured using the most recent version of TLS with perfect forward secrecy and a modern cipher set.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_5" type="checkbox" class="icheck">Authentication should include a set of claims.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_6" type="checkbox" class="icheck">Use the API Gateway to validate the Bearer token
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_7" type="checkbox" class="icheck">Ensure the API Gateway does not cache.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_8" type="checkbox" class="icheck">No export-grade encryption algorithms.
-                                                    </label>
-                                                </div>
-                                                
-                                            </div><!-- /step 1-->
+    <div class="wrapper_in">
+      <div class="container-fluid">
+        <div class="tab-content">
+          <div class="tab-pane fade" id="tab_1">
+            <div class="subheader" id="quote"></div>
+            <div class="row">
+              <aside class="col-xl-3 col-lg-4" id="evaluate">
+                <h2>Evaluate an API and see your score</h2>
+                <p class="lead">
+                  Step through our questionnaire for a free evaluation
+                </p>
+                <ul class="list_ok">
+                  <li>Is the communcation mechanism secure?</li>
+                  <li>Is there an audit trail?</li>
+                  <li>
+                    Has the API been authorized to access the requested
+                    resource?
+                  </li>
+                </ul>
+              </aside>
+              <!-- /aside -->
 
-                                            <div class="step">
-                                                <h3 class="main_question"><strong>2/6</strong>Authorization and Access Control</h3>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_9" type="checkbox" class="icheck">Authorization results are not cached.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_10" type="checkbox" class="icheck">If OAuth, users can revoke tokens without administrator assistance.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_11" type="checkbox" class="icheck">Return 403 for OAuth authorization failure.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_12" type="checkbox" class="icheck">All code paths should require authorization.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_13" type="checkbox" class="icheck">Use scope claims to constrain the activities of a caller.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_14" type="checkbox" class="icheck">Sensitive information should not be visible in paths.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_15" type="checkbox" class="icheck">Sensitive information should not be visible in headers.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_16" type="checkbox" class="icheck">The API Gateway evaluates the calling application to authorize access to an endpoint.
-                                                    </label>
-                                                </div>
-                                            </div><!-- /step 2-->
+              <div class="col-xl-9 col-lg-8">
+                <div id="wizard_container">
+                  <div id="top-wizard">
+                    <strong>Progress</strong>
+                    <div id="progressbar"></div>
+                  </div>
+                  <!-- /top-wizard -->
 
-                                            <div class="step">
-                                                <h3 class="main_question"><strong>3/6</strong>Request Validation</h3>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_17" type="checkbox" class="icheck">Use correlation keys requested from clients.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_18" type="checkbox" class="icheck">If a client does not provide a correlation key, have the API Gateway create one.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_19" type="checkbox" class="icheck">Encrypt context.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_20" type="checkbox" class="icheck">Verify content types in request bodies.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_21" type="checkbox" class="icheck">Reject requests that do not send accepted content.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_22" type="checkbox" class="icheck">Content is verified to be syntactically correct.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_23" type="checkbox" class="icheck">Verify content against a schema.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_24" type="checkbox" class="icheck">Request bodies are not directly bound to data objects.
-                                                    </label>
-                                                </div>
-                                            </div><!-- /step 3-->
+                  <!-- start of Evaluation API Form -->
+                  <form name="api-evaluation-form" id="wrapped">
+                    <input id="website" name="website" type="text"
+                      value="" /><!-- Leave for security protection, read docs for details -->
+                    <div id="middle-wizard">
+                      <div class="step">
+                        <h3 class="main_question">
+                          <strong>1/6</strong>Network Security and
+                          Authentication
+                        </h3>
 
-                                            <div class="step">
-                                                <h3 class="main_question"><strong>4/6</strong>Response Handling</h3>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_25" type="checkbox" class="icheck">Do not return unnecessary information about the nature of an error.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_26" type="checkbox" class="icheck">Error responses should only include sufficient information for a consumer to know how to correct their request.
-                                                    </label>
-                                                </div>
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_27" type="checkbox" class="icheck">Sensitive information should not be visible in response headers.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_28" type="checkbox" class="icheck">Use the no-cache directive on API endpoints.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_29" type="checkbox" class="icheck">Use Cache-Control headers to identify stale information.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_30" type="checkbox" class="icheck">Disable caching.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_31" type="checkbox" class="icheck">Redact sensitive information.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_32" type="checkbox" class="icheck">Enable CORS for APIs running in a browser.
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_1" type="checkbox" class="icheck" />Check certificate revocation
+                            on every call.
+                          </label>
+                        </div>
 
-                                                    </label>
-                                                </div>
-                                            </div><!-- /step 4-->
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_2" type="checkbox" class="icheck" />A trusted PKI issues
+                            certificates.
+                          </label>
+                        </div>
 
-                                            <div class="step">
-                                                <h3 class="main_question"><strong>5/6</strong>Data Protection and Handling</h3>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_33" type="checkbox" class="icheck">Responses should not contain sensitive data.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_34" type="checkbox" class="icheck">Parameterize SQL queries.
-                                                    </label>
-                                                </div>
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_35" type="checkbox" class="icheck">Do not use dynamic SQL in stored procedures.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_36" type="checkbox" class="icheck">JSON is not evaluated directly as JavaScript.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_37" type="checkbox" class="icheck">Do not execute binary code or script code in the body.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_38" type="checkbox" class="icheck">Log security events into a centralized security event system.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_39" type="checkbox" class="icheck">Convert exceptions to standardized errors.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_40" type="checkbox" class="icheck">Patch critical vulnerabilities immediately.
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_3" type="checkbox" class="icheck" />No export-grade encryption
+                            algorithms.
+                          </label>
+                        </div>
 
-                                                    </label>
-                                                </div>
-                                            </div><!-- /step 5-->
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_4" type="checkbox" class="icheck" />All communications to the
+                            network's edge are
+                            secured using the most recent version of TLS with
+                            perfect forward secrecy and a modern cipher set.
+                          </label>
+                        </div>
 
-                                            <div class="submit step">
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_5" type="checkbox" class="icheck" />Authentication should include
+                            a set of claims.
+                          </label>
+                        </div>
 
-                                                <h3 class="main_question"><strong>6/6</strong>Access Control and Management</h3>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_41" type="checkbox" class="icheck">Use network isolation techniques.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_42" type="checkbox" class="icheck">Check sudden changes in API usage.
-                                                    </label>
-                                                </div>
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_43" type="checkbox" class="icheck">Only appropriate personnel can disable an API.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_44" type="checkbox" class="icheck">Only appropriate personnel can disable access to APIs by applications.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_45" type="checkbox" class="icheck">Mark data with a security classification to identify its appropriate usage.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_46" type="checkbox" class="icheck">As a rule, developers cannot modify code in any environment without following the standard code progression path.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_47" type="checkbox" class="icheck">Use automated tests.
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="form-group checkbox_questions">
-                                                    <label><input name="question_48" type="checkbox" class="icheck">Record and track technical debt.
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_6" type="checkbox" class="icheck" />Use the API Gateway to
+                            validate the Bearer token
+                          </label>
+                        </div>
 
-                                                    </label>
-                                                </div>
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_7" type="checkbox" class="icheck" />Ensure the API Gateway does
+                            not cache.
+                          </label>
+                        </div>
 
-                                            </div><!-- /step 6-->
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_8" type="checkbox" class="icheck" />No export-grade encryption
+                            algorithms.
+                          </label>
+                        </div>
+                      </div>
+                      <!-- /step 1-->
 
-                                        </div><!-- /middle-wizard -->
-                                        <div id="bottom-wizard">
-                                            <button type="button" name="backward" class="backward">Backward </button>
-                                            <button type="button" name="forward" class="forward" id="forward">Forward</button>
-                                            <button id="process" type="submit" name="process" class="submit">Submit</button>
-                                        </div><!-- /bottom-wizard -->
-                                    </form>
-                                </div><!-- /Wizard container -->
+                      <div class="step">
+                        <h3 class="main_question">
+                          <strong>2/6</strong>Authorization and Access Control
+                        </h3>
 
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                        </div><!-- /TAB 1:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-                    
-                    <div class="tab-pane fade" id="tab_2">
-                       <div class="subheader" id="about"></div>
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h2>Welcome to Taliferro Group</h2>
-                                <p class="lead">At <strong>Taliferro Group</strong>, we recognize the critical role technology plays in today's competitive landscape. Drawing inspiration from our commitment to turning technology into a competitive edge, our mission is to empower businesses with comprehensive <i>API security solutions</i>.
-                                </p>
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_9" type="checkbox" class="icheck" />Authorization results are not
+                            cached.
+                          </label>
+                        </div>
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="box_feat" id="icon_1">
-                                            <span><br/></span>
-                                            <h3>Authentication and Authorization</h3>
-                                            <p>Elevate your API security with our checklist's emphasis on robust authentication and authorization mechanisms, ensuring only authorized users and systems access your valuable resources.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="box_feat" id="icon_2"><br/>
-                                            <span></span>
-                                            <h3>Data Encryption</h3>
-                                            <p>Enhance your API security posture with our checklist's comprehensive guide to advanced data encryption techniques, safeguarding the confidentiality and integrity of your sensitive information during transmission and storage.</p>
-                                        </div>
-                                    </div>
-                                    </div><!-- /row -->
-                                    <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="box_feat" id="icon_3"><br/>
-                                            <h3>Audit and Monitoring</h3>
-                                            <p>Stay ahead of potential threats by incorporating our checklist's robust audit and monitoring solutions, allowing real-time detection of anomalies and ensuring the integrity of your API interactions</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="box_feat" id="icon_4"><br/><br/>
-                                            <h3>Developer Education</h3>
-                                            <p>Empower your development team with our checklist's focus on education and best practices, fostering a security-first mindset and ensuring your API implementations align with industry standards and guidelines.</p>
-                                        </div>
-                                    </div>
-                                </div><!-- /row -->
-                                  <hr>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="about_info">
-                                                <i class="pe-7s-news-paper"></i>
-                                                <h4>A brief about Taliferro Group</h4>
-                                                <p>Tailoring our expertise to diverse sectors, we address specific challenges in <strong>API security</strong>, ensuring the longevity and prosperity of your digital assets. Our collaborative approach, continuous adaptation to tech trends, and unwavering commitment to client success converge to make <strong>Taliferro Group</strong> your trusted partner in navigating the evolving landscape of digital security.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="about_info">
-                                                <i class="pe-7s-light"></i>
-                                                <h4>Mission</h4>
-                                                <p>We aim to bolster your digital infrastructure by transforming your technology into a strategic asset. We specialize in providing robust <strong>API security solutions</strong> that empower businesses to confidently navigate the dynamic digital landscape. Our focus is on uncovering hidden revenue streams, and our dedication lies in identifying and addressing vulnerabilities to ensure the resilience of your virtual resources.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div><!-- /row -->  
-                            </div><!-- /col -->
-                            
-                            <aside class="col-lg-4">
-                                <div class="more_padding_left">
-                                    <div class="widget" id="review">
-                                        <h4>reviews</h4>
-                                        <div class="owl-carousel owl-theme add_bottom_30">
-                                            <div class="item">
-                                                <blockquote class="testimonial">
-                                                    <p>
-                                                        Saluting Taliferro Group from Redmond, There are so many Sr. IT top guns out there, but few could provide sound advice after a brief chat. Lucky me to be one of the guys who received such advice yesterday from them.
-                                                    </p>
-                                                </blockquote>
-                                                <div class="testimonial-arrow-down">
-                                                </div>
-                                                <div class="testimonial-author">
-                                                   <!--  <div class="img-thumbnail img-thumbnail-small">
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_10" type="checkbox" class="icheck" />If OAuth, users can revoke
+                            tokens without
+                            administrator assistance.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_11" type="checkbox" class="icheck" />Return 403 for OAuth
+                            authorization failure.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_12" type="checkbox" class="icheck" />All code paths should
+                            require authorization.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_13" type="checkbox" class="icheck" />Use scope claims to
+                            constrain the activities of
+                            a caller.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_14" type="checkbox" class="icheck" />Sensitive information should
+                            not be visible in
+                            paths.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_15" type="checkbox" class="icheck" />Sensitive information should
+                            not be visible in
+                            headers.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_16" type="checkbox" class="icheck" />The API Gateway evaluates
+                            the calling
+                            application to authorize access to an endpoint.
+                          </label>
+                        </div>
+                      </div>
+                      <!-- /step 2-->
+
+                      <div class="step">
+                        <h3 class="main_question">
+                          <strong>3/6</strong>Request Validation
+                        </h3>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_17" type="checkbox" class="icheck" />Use correlation keys
+                            requested from clients.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_18" type="checkbox" class="icheck" />If a client does not provide
+                            a correlation key,
+                            have the API Gateway create one.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_19" type="checkbox" class="icheck" />Encrypt context.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_20" type="checkbox" class="icheck" />Verify content types in
+                            request bodies.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_21" type="checkbox" class="icheck" />Reject requests that do not
+                            send accepted
+                            content.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_22" type="checkbox" class="icheck" />Content is verified to be
+                            syntactically correct.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_23" type="checkbox" class="icheck" />Verify content against a
+                            schema.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_24" type="checkbox" class="icheck" />Request bodies are not
+                            directly bound to data
+                            objects.
+                          </label>
+                        </div>
+                      </div>
+                      <!-- /step 3-->
+
+                      <div class="step">
+                        <h3 class="main_question">
+                          <strong>4/6</strong>Response Handling
+                        </h3>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_25" type="checkbox" class="icheck" />Do not return unnecessary
+                            information about the
+                            nature of an error.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_26" type="checkbox" class="icheck" />Error responses should only
+                            include sufficient
+                            information for a consumer to know how to correct
+                            their request.
+                          </label>
+                        </div>
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_27" type="checkbox" class="icheck" />Sensitive information should
+                            not be visible in
+                            response headers.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_28" type="checkbox" class="icheck" />Use the no-cache directive
+                            on API endpoints.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_29" type="checkbox" class="icheck" />Use Cache-Control headers to
+                            identify stale
+                            information.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_30" type="checkbox" class="icheck" />Disable caching.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_31" type="checkbox" class="icheck" />Redact sensitive
+                            information.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_32" type="checkbox" class="icheck" />Enable CORS for APIs running
+                            in a browser.
+                          </label>
+                        </div>
+                      </div>
+                      <!-- /step 4-->
+
+                      <div class="step">
+                        <h3 class="main_question">
+                          <strong>5/6</strong>Data Protection and Handling
+                        </h3>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_33" type="checkbox" class="icheck" />Responses should not contain
+                            sensitive data.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_34" type="checkbox" class="icheck" />Parameterize SQL queries.
+                          </label>
+                        </div>
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_35" type="checkbox" class="icheck" />Do not use dynamic SQL in
+                            stored procedures.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_36" type="checkbox" class="icheck" />JSON is not evaluated
+                            directly as JavaScript.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_37" type="checkbox" class="icheck" />Do not execute binary code
+                            or script code in the
+                            body.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_38" type="checkbox" class="icheck" />Log security events into a
+                            centralized security
+                            event system.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_39" type="checkbox" class="icheck" />Convert exceptions to
+                            standardized errors.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_40" type="checkbox" class="icheck" />Patch critical
+                            vulnerabilities immediately.
+                          </label>
+                        </div>
+                      </div>
+                      <!-- /step 5-->
+
+                      <div class="step">
+                        <h3 class="main_question">
+                          <strong>6/6</strong>Access Control and Management
+                        </h3>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_41" type="checkbox" class="icheck" />Use network isolation
+                            techniques.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_42" type="checkbox" class="icheck" />Check sudden changes in API
+                            usage.
+                          </label>
+                        </div>
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_43" type="checkbox" class="icheck" />Only appropriate personnel
+                            can disable an API.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_44" type="checkbox" class="icheck" />Only appropriate personnel
+                            can disable access to
+                            APIs by applications.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_45" type="checkbox" class="icheck" />Mark data with a security
+                            classification to
+                            identify its appropriate usage.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_46" type="checkbox" class="icheck" />As a rule, developers cannot
+                            modify code in any
+                            environment without following the standard code
+                            progression path.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_47" type="checkbox" class="icheck" />Use automated tests.
+                          </label>
+                        </div>
+
+                        <div class="form-group checkbox_questions">
+                          <label><input name="question_48" type="checkbox" class="icheck" />Record and track technical
+                            debt.
+                          </label>
+                        </div>
+                      </div>
+                      <!-- /step 6-->
+
+                      <div class="submit step">
+                        <label for="company_name">Company:</label>
+                        <input id="company_name" name="company_name" type="text" required />
+                        <label for="first_name">First Name:</label>
+                        <input id="first_name" name="first_name" type="text" autocomplete="given-name" />
+                        <label for="last_name">Last Name:</label>
+                        <input id="last_name" name="last_name" type="text" autocomplete="family-name" />
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="email" autocomplete="email" />
+                      </div>
+                      <!-- /step 7-->
+                    </div>
+                    <!-- /middle-wizard -->
+                    <div id="bottom-wizard">
+                      <button type="button" name="backward" class="backward" id="back">
+                        Backward
+                      </button>
+                      <button type="button" name="forward" class="forward" id="forward">
+                        Forward
+                      </button>
+                      <button id="process" type="submit" name="process" class="submit">
+                        Submit
+                      </button>
+                    </div>
+                    <!-- /bottom-wizard -->
+                  </form>
+                  <!-- end of Evaluation API Form -->
+                </div>
+                <!-- /Wizard container -->
+              </div>
+              <!-- /col -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /TAB 1:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+          <div class="tab-pane fade" id="tab_2">
+            <div class="subheader" id="about"></div>
+            <div class="row">
+              <div class="col-lg-8">
+                <h2>Welcome to Taliferro Group</h2>
+                <p class="lead">
+                  At <strong>Taliferro Group</strong>, we recognize the
+                  critical role technology plays in today's competitive
+                  landscape. Drawing inspiration from our commitment to
+                  turning technology into a competitive edge, our mission is
+                  to empower businesses with comprehensive
+                  <i>API security solutions</i>.
+                </p>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="box_feat" id="icon_1">
+                      <span><br /></span>
+                      <h3>Authentication and Authorization</h3>
+                      <p>
+                        Elevate your API security with our checklist's
+                        emphasis on robust authentication and authorization
+                        mechanisms, ensuring only authorized users and systems
+                        access your valuable resources.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="box_feat" id="icon_2">
+                      <br />
+                      <span></span>
+                      <h3>Data Encryption</h3>
+                      <p>
+                        Enhance your API security posture with our checklist's
+                        comprehensive guide to advanced data encryption
+                        techniques, safeguarding the confidentiality and
+                        integrity of your sensitive information during
+                        transmission and storage.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /row -->
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="box_feat" id="icon_3">
+                      <br />
+                      <h3>Audit and Monitoring</h3>
+                      <p>
+                        Stay ahead of potential threats by incorporating our
+                        checklist's robust audit and monitoring solutions,
+                        allowing real-time detection of anomalies and ensuring
+                        the integrity of your API interactions
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="box_feat" id="icon_4">
+                      <br /><br />
+                      <h3>Developer Education</h3>
+                      <p>
+                        Empower your development team with our checklist's
+                        focus on education and best practices, fostering a
+                        security-first mindset and ensuring your API
+                        implementations align with industry standards and
+                        guidelines.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /row -->
+                <hr />
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="about_info">
+                      <i class="pe-7s-news-paper"></i>
+                      <h4>A brief about Taliferro Group</h4>
+                      <p>
+                        Tailoring our expertise to diverse sectors, we address
+                        specific challenges in <strong>API security</strong>,
+                        ensuring the longevity and prosperity of your digital
+                        assets. Our collaborative approach, continuous
+                        adaptation to tech trends, and unwavering commitment
+                        to client success converge to make
+                        <strong>Taliferro Group</strong> your trusted partner
+                        in navigating the evolving landscape of digital
+                        security.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about_info">
+                      <i class="pe-7s-light"></i>
+                      <h4>Mission</h4>
+                      <p>
+                        We aim to bolster your digital infrastructure by
+                        transforming your technology into a strategic asset.
+                        We specialize in providing robust
+                        <strong>API security solutions</strong> that empower
+                        businesses to confidently navigate the dynamic digital
+                        landscape. Our focus is on uncovering hidden revenue
+                        streams, and our dedication lies in identifying and
+                        addressing vulnerabilities to ensure the resilience of
+                        your virtual resources.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /row -->
+              </div>
+              <!-- /col -->
+
+              <aside class="col-lg-4">
+                <div class="more_padding_left">
+                  <div class="widget" id="review">
+                    <h4>reviews</h4>
+                    <div class="owl-carousel owl-theme add_bottom_30">
+                      <div class="item">
+                        <blockquote class="testimonial">
+                          <p>
+                            Saluting Taliferro Group from Redmond, There are
+                            so many Sr. IT top guns out there, but few could
+                            provide sound advice after a brief chat. Lucky me
+                            to be one of the guys who received such advice
+                            yesterday from them.
+                          </p>
+                        </blockquote>
+                        <div class="testimonial-arrow-down"></div>
+                        <div class="testimonial-author">
+                          <!--  <div class="img-thumbnail img-thumbnail-small">
                                                         <img src="img/avatar1.jpg" alt="">
                                                     </div> -->
-                                                    <p>
-                                                        <strong>Henry Pan</strong><span>Sr. Cloud Engineering Manager</span>
-                                                    </p>
-                                                </div>
-                                            </div><!-- /item -->
-                                            <div class="item">
-                                                <blockquote class="testimonial">
-                                                    <p>
-                                                        Taliferro Group was working alongside development teams whom were delivering complex API's while assessing both the team and the API as to the Cyber Security Maturity and Posture. I found Taliferro Group to be very methodical and centered as they guided a development team through the process. 
-                                                    </p>
-                                                </blockquote>
-                                                <div class="testimonial-arrow-down">
-                                                </div>
-                                                <div class="testimonial-author">
-                                                    <!-- <div class="img-thumbnail img-thumbnail-small">
+                          <p>
+                            <strong>Henry Pan</strong><span>Sr. Cloud Engineering Manager</span>
+                          </p>
+                        </div>
+                      </div>
+                      <!-- /item -->
+                      <div class="item">
+                        <blockquote class="testimonial">
+                          <p>
+                            Taliferro Group was working alongside development
+                            teams whom were delivering complex API's while
+                            assessing both the team and the API as to the
+                            Cyber Security Maturity and Posture. I found
+                            Taliferro Group to be very methodical and centered
+                            as they guided a development team through the
+                            process.
+                          </p>
+                        </blockquote>
+                        <div class="testimonial-arrow-down"></div>
+                        <div class="testimonial-author">
+                          <!-- <div class="img-thumbnail img-thumbnail-small">
                                                         <img src="img/avatar2.jpg" alt="">
                                                     </div> -->
-                                                    <p>
-                                                        <strong>Ken Crimson</strong><span>Associate Director, Security Enablement</span>
-                                                    </p>
-                                                </div>
-                                            </div><!-- /item -->
-                                            <div class="item">
-                                                <blockquote class="testimonial">
-                                                    <p>
-                                                        Taliferro Group has been a technical subject matter expert for RESTful API design on my team since 2010. Taliferro Group authored the bulk of our Guidelines for RESTful API Design. This document is an extremely useful compendium of best practices that we have used to drive consistency across APIs. 
-                                                    </p>
-                                                </blockquote>
-                                                <div class="testimonial-arrow-down">
-                                                </div>
-                                                <div class="testimonial-author">
-                                                    <!-- <div class="img-thumbnail img-thumbnail-small">
+                          <p>
+                            <strong>Ken Crimson</strong><span>Associate Director, Security Enablement</span>
+                          </p>
+                        </div>
+                      </div>
+                      <!-- /item -->
+                      <div class="item">
+                        <blockquote class="testimonial">
+                          <p>
+                            Taliferro Group has been a technical subject
+                            matter expert for RESTful API design on my team
+                            since 2010. Taliferro Group authored the bulk of
+                            our Guidelines for RESTful API Design. This
+                            document is an extremely useful compendium of best
+                            practices that we have used to drive consistency
+                            across APIs.
+                          </p>
+                        </blockquote>
+                        <div class="testimonial-arrow-down"></div>
+                        <div class="testimonial-author">
+                          <!-- <div class="img-thumbnail img-thumbnail-small">
                                                         <img src="img/avatar3.jpg" alt="">
                                                     </div> -->
-                                                    <p>
-                                                        <strong>Ed Lambert</strong><span>Lead Product Development Engineer</span>
-                                                    </p>
-                                                </div>
-                                            </div><!-- /item -->
-                                        </div><!-- /carousel -->
-                                    </div><!-- /reviews --><!-- 
+                          <p>
+                            <strong>Ed Lambert</strong><span>Lead Product Development Engineer</span>
+                          </p>
+                        </div>
+                      </div>
+                      <!-- /item -->
+                    </div>
+                    <!-- /carousel -->
+                  </div>
+                  <!-- /reviews --><!-- 
                                     <div class="widget" id="gallery">
                                         <h4>gallery</h4>
                                         <ul class="magnific-gallery">
@@ -544,120 +793,235 @@
                                             </li>
                                         </ul>
                                     </div> --><!-- /gallery -->
-                                     <div class="widget" id="follow">
-                                        <h4>follow us</h4>
-                                        <ul>
-                                            <li><a href="https://www.instagram.com/taliferrogroup/" target="_blank" title="A social media link to Taliferro Group's Instagram"><i class="icon-instagram"></i>Instagram</a></li>
-                                            <li><a href="https://twitter.com/TaliferroLLC" target="_blank" title="A social media link to Taliferro Group's Twitter"><i class="icon-twitter"></i>Twitter</a></li>
-                                            <li><a href="https://www.youtube.com/channel/UCbSklLhEDs-4kld584LtdlQ" target="_blank" title="A social media link to Taliferro Group's YouTube channel"><i class="icon-youtube"></i>YouTube</a></li>
-                                            <li><a href="https://www.linkedin.com/company/taliferro/" target="_blank" title="A social media link to Taliferro Group's LinkedIn"><i class="icon-linkedin"></i>LinkedIn</a></li>
-                                        </ul>
-                                    </div><!-- /follow -->
-                                </div><!-- /more padding left -->
-                            </aside>
-                        </div><!-- /row -->
-                    </div><!-- /TAB 2:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-                    
-                    <div class="tab-pane fade" id="tab_3">
-                        
-                        <div id="map_contact" class="container map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.6430013693443!2d-122.32037502387249!3d47.61363098749232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acc322bf8e5%3A0x5ebbae92e4053ffc!2s1424%2011th%20Ave%2C%20Seattle%2C%20WA%2098122!5e0!3m2!1sen!2sus!4v1701331626570!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div><!-- /map -->
-                        
-                        <div id="contact_info">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="box_contact">
-                                        <i class="pe-7s-map-marker"></i>
-                                        <h4>Address</h4>
-                                        <p>Explore our location and connect with us – find our address below and discover where your journey to exceptional experiences begins.</p>
-                                        <p>1424 11th Ave STE 400 Seattle, WA 98122</p>
-										<a href="https://www.google.com/maps/dir//1424+11th+Ave,+Seattle,+WA+98122/@47.6137136,-122.4002008,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x54906acc322bf8e5:0x5ebbae92e4053ffc!2m2!1d-122.3178001!2d47.6136274!3e0?entry=ttu" class="btn_1" target="_blank" title="An external link to Google Maps to retrieve directions to the Taliferro Group office">Get directions</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box_contact">
-                                        <i class="pe-7s-mail-open-file"></i>
-                                        <h4>Email and website</h4>
-                                        <p>Connect effortlessly with us online – discover our email and website details below, the gateway to staying informed and engaged with our digital presence.</p>
-                                        <p>
-                                            <strong>Email:</strong> <a href="mailto:info@taliferro.com" title="A link to open your devices default email application with the Taliferro Group email address prepopulated in the 'FROM' field">info@taliferro.com</a><br>
-                                            <strong>Website:</strong> <a href="https://www.taliferro.com/" target="_blank" title="A link to the Taliferro Group main website">www.taliferro.com</a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="box_contact">
-                                        <i class="pe-7s-call"></i>
-                                        <h4>Telephone</h4>
-                                        <p>Stay connected with ease – find our company telephone number below, your direct line to seamless communication and unparalleled support.</p>
-                                        <p>
-                                        	<strong>Tel:</strong> <a href="tel:206-809-8529" title="A link to open the phone application on a mobile device with the Taliferro Group phone number prepopulated">(206) 809-8529</a><br>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div><!-- / row-->
-                            <hr>
-                            <div id="social">
-                                <ul>
-                                    <li><a href="https://www.instagram.com/taliferrogroup/" target="_blank" title="A social media link to Taliferro Group's Instagram"><i class="icon-instagram"></i></a></li>
-                                    <li><a href="https://twitter.com/TaliferroLLC" target="_blank" title="A social media link to Taliferro Group's Twitter"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCbSklLhEDs-4kld584LtdlQ" target="_blank" title="A social media link to Taliferro Group's YouTube channel"><i class="icon-youtube"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/taliferro/" target="_blank" title="A social media link to Taliferro Group's LinkedIn"><i class="icon-linkedin"></i></a></li>
-                                </ul>
-                            </div><!-- /social -->
-                        </div>
-                    </div><!-- /TAB 3:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+                  <div class="widget" id="follow">
+                    <h4>follow us</h4>
+                    <ul>
+                      <li>
+                        <a href="https://www.instagram.com/taliferrogroup/" target="_blank"
+                          title="A social media link to Taliferro Group's Instagram"><i
+                            class="icon-instagram"></i>Instagram</a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/TaliferroLLC" target="_blank"
+                          title="A social media link to Taliferro Group's Twitter"><i
+                            class="icon-twitter"></i>Twitter</a>
+                      </li>
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCbSklLhEDs-4kld584LtdlQ" target="_blank"
+                          title="A social media link to Taliferro Group's YouTube channel"><i
+                            class="icon-youtube"></i>YouTube</a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/company/taliferro/" target="_blank"
+                          title="A social media link to Taliferro Group's LinkedIn"><i
+                            class="icon-linkedin"></i>LinkedIn</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /follow -->
+                </div>
+                <!-- /more padding left -->
+              </aside>
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /TAB 2:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
-                </div><!-- /tab content -->
-            </div><!-- /container-fluid -->
-        </div><!-- /wrapper_in -->
-    </div><!-- /main_container -->
+          <div class="tab-pane fade" id="tab_3">
+            <div id="map_contact" class="container map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.6430013693443!2d-122.32037502387249!3d47.61363098749232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906acc322bf8e5%3A0x5ebbae92e4053ffc!2s1424%2011th%20Ave%2C%20Seattle%2C%20WA%2098122!5e0!3m2!1sen!2sus!4v1701331626570!5m2!1sen!2sus"
+                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- /map -->
 
-    <div id="additional_links">
-        <ul>
-            <li>® 2023 Taliferro - Taliferro Is Registered In The U.S. Patent And Trademark Office.</li>
-            <!-- <li><a href="#" class="animated_link tab-link" data-tab-id="tab_1">Start Assessment</a></li>
+            <div id="contact_info">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="box_contact">
+                    <i class="pe-7s-map-marker"></i>
+                    <h4>Address</h4>
+                    <p>
+                      Explore our location and connect with us – find our
+                      address below and discover where your journey to
+                      exceptional experiences begins.
+                    </p>
+                    <p>1424 11th Ave STE 400 Seattle, WA 98122</p>
+                    <a href="https://www.google.com/maps/dir//1424+11th+Ave,+Seattle,+WA+98122/@47.6137136,-122.4002008,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x54906acc322bf8e5:0x5ebbae92e4053ffc!2m2!1d-122.3178001!2d47.6136274!3e0?entry=ttu"
+                      class="btn_1" target="_blank"
+                      title="An external link to Google Maps to retrieve directions to the Taliferro Group office">Get
+                      directions</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box_contact">
+                    <i class="pe-7s-mail-open-file"></i>
+                    <h4>Email and website</h4>
+                    <p>
+                      Connect effortlessly with us online – discover our email
+                      and website details below, the gateway to staying
+                      informed and engaged with our digital presence.
+                    </p>
+                    <p>
+                      <strong>Email:</strong>
+                      <a href="mailto:info@taliferro.com"
+                        title="A link to open your devices default email application with the Taliferro Group email address prepopulated in the 'FROM' field">info@taliferro.com</a><br />
+                      <strong>Website:</strong>
+                      <a href="https://www.taliferro.com/" target="_blank"
+                        title="A link to the Taliferro Group main website">www.taliferro.com</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="box_contact">
+                    <i class="pe-7s-call"></i>
+                    <h4>Telephone</h4>
+                    <p>
+                      Stay connected with ease – find our company telephone
+                      number below, your direct line to seamless communication
+                      and unparalleled support.
+                    </p>
+                    <p>
+                      <strong>Tel:</strong>
+                      <a href="tel:206-809-8529"
+                        title="A link to open the phone application on a mobile device with the Taliferro Group phone number prepopulated">(206)
+                        809-8529</a><br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- / row-->
+              <hr />
+              <div id="social">
+                <ul>
+                  <li>
+                    <a href="https://www.instagram.com/taliferrogroup/" target="_blank"
+                      title="A social media link to Taliferro Group's Instagram"><i class="icon-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/TaliferroLLC" target="_blank"
+                      title="A social media link to Taliferro Group's Twitter"><i class="icon-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCbSklLhEDs-4kld584LtdlQ" target="_blank"
+                      title="A social media link to Taliferro Group's YouTube channel"><i class="icon-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/taliferro/" target="_blank"
+                      title="A social media link to Taliferro Group's LinkedIn"><i class="icon-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /social -->
+            </div>
+          </div>
+          <!-- /TAB 3:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+          <!-- <div class="tab-pane fade" id="tab_4">
+              <div class="auth_container">
+                <div id="firebaseui-auth-container"></div>
+              </div>
+            </div> -->
+        </div>
+
+        <!-- /tab content -->
+      </div>
+
+      <!-- /container-fluid -->
+    </div>
+    <!-- /wrapper_in -->
+  </div>
+  <!-- /main_container -->
+
+  <div id="additional_links">
+    <ul>
+      <li>
+        ® <span id="cw-date">2023</span>
+        <a href="https://taliferro.com/" title="A link to the homepage of the Taliferro Group API Evaluation site"
+          class="animated_link" target="_blank">Taliferro</a>
+        - Taliferro Is Registered In The U.S. Patent And Trademark Office.
+      </li>
+      <!-- <li><a href="#" class="animated_link tab-link" data-tab-id="tab_1">Start Assessment</a></li>
             <li><a href="index_2.html" class="animated_link">About</a></li>
 			<li><a href="index_3.html" class="animated_link">Contact</a></li> -->
-            <li><a href="https://factory.16ahead.com/marketing/general-widgets" target="_blank" class="animated_link" title="A link to The Factory widget site">The Factory</a></li>
-            <li><a href="https://taliferro.com/blog/nov-2022/security-vulnerability-management-white-paper" class="animated_link" target="_blank" title="A link to Taliferro Group's white paper">White Paper</a></li>
-        </ul>
-    </div><!-- /add links -->
+      <!-- <li>
+          <a
+            href="https://factory.16ahead.com/marketing/general-widgets"
+            target="_blank"
+            class="animated_link"
+            title="A link to The Factory widget site"
+            >The Factory</a
+          >
+        </li> -->
+      <li>
+        <a href="https://blog.taliferro.com/nov2022/nov012022/security-vulnerability-management-white-paper.html"
+          class="animated_link" target="_blank" title="A link to Taliferro Group's white paper">White Paper</a>
+      </li>
+    </ul>
+  </div>
+  <!-- /add links -->
 
-    <!-- Modal terms -->
-    <div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Terms and conditions</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					  <span aria-hidden="true">&times;</span>
-					</button>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-                    <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-                    <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn_1" data-dismiss="modal">Close</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+  <!-- Modal terms -->
+  <div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Terms and conditions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, in porro albucius qui, in
+            <strong>nec quod novum accumsan</strong>, mei ludus tamquam
+            dolores id. No sit debitis meliore postulant, per ex prompta
+            alterum sanctus, pro ne quod dicunt sensibus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod
+            novum accumsan, mei ludus tamquam dolores id. No sit debitis
+            meliore postulant, per ex prompta alterum sanctus, pro ne quod
+            dicunt sensibus. Lorem ipsum dolor sit amet,
+            <strong>in porro albucius qui</strong>, in nec quod novum
+            accumsan, mei ludus tamquam dolores id. No sit debitis meliore
+            postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+            sensibus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod
+            novum accumsan, mei ludus tamquam dolores id. No sit debitis
+            meliore postulant, per ex prompta alterum sanctus, pro ne quod
+            dicunt sensibus.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn_1" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
 
-	<!-- SCRIPTS -->
-    <!-- Jquery-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Common script -->
-    <script src="js/common_scripts_min.js"></script>
-    <!-- Theme script -->
-    <script src="js/functions.js"></script>
-    <!-- Checklist script -->
-    <script src="js/checklist-items.js"></script>
-    
+  <!-- SCRIPTS -->
+  <!-- Jquery-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Common script -->
+  <script src="js/common_scripts_min.js"></script>
+  <!-- Theme script -->
+  <script src="js/functions.js"></script>
+  <!-- Checklist -->
+  <script type="module" src="js/index.js"></script>
+
+  <script>
+    const cwDate = document.getElementById("cw-date");
+    cwDate.innerHTML = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
